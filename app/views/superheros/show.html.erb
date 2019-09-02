@@ -1,0 +1,11 @@
+<h1><%= @superhero.name %></h1>
+
+
+<ul>
+  <li>Name: <%= @superhero.name %> </li>
+</ul>
+
+<div class="controls">
+  <%= link_to 'Edit SuperHero', edit_superhero_path(@superhero) %>
+  <%= link_to 'Delete Superhero', @superhero, :method => 'delete', :data => { :confirm => 'Are you sure?'} %>
+</div>
